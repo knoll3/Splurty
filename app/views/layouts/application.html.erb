@@ -23,7 +23,7 @@
         <% end %>
       </div>
       <div class="col-4 hidden-xs-down slogan">
-        Splurting out unwanted quotes about downsizing since 2018
+        Splurting out unwanted advice about downsizing since 2018
      </div>
       <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <%= link_to 'Add Quote', '#', data: { toggle: 'modal', target: '#myModal'} %>
@@ -46,7 +46,7 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
           <div class="modal-body">
-              <%= f.input :saying, label: "What is the saying you want to add?", placeholder: "Your quote.." %>
+              <%= f.input :saying, label: "You know you need to downsize when..", placeholder: "Your saying.." %>
               <br />
               <%= f.input :author, label: "What is your name?", placeholder: "Your name.." %>
               <br />

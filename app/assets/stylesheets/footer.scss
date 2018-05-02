@@ -16,6 +16,11 @@ body {
   height: 60px;
 }
 
+.footer a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
 .next-quote {
   color: #f84342;
   font-family: 'acmeregular', sans-serif;
