@@ -35,3 +35,12 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'acmeregular';
+    src: url('acme-regular-webfont.woff2') format('woff2'),
+         url('acme-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

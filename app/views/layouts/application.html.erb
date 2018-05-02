@@ -22,11 +22,12 @@
           </div>
         <% end %>
       </div>
-      <div class="col-4 slogan">
+      <div class="col-4 hidden-xs-down slogan">
         Splurting out unwanted quotes about downsizing since 2018
      </div>
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <%= link_to 'Add Quote', '#', data: { toggle: 'modal', target: '#myModal'} %>
+        &nbsp; &nbsp;
         <%= link_to 'About'    , about_path %>  
       </div>
     </header>
@@ -45,15 +46,12 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
           <div class="modal-body">
-              <%= f.input :saying %>
-              <%= f.input :author %>
+              <%= f.input :saying, label: "What is the saying you want to add?", placeholder: "Your quote.." %>
+              <br />
+              <%= f.input :author, label: "What is your name?", placeholder: "Your name.." %>
               <br />
               <%= f.submit 'Create', class: 'btn btn-danger' %>
             <% end %>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -67,16 +65,17 @@
           <%= flash[:error].html_safe %>
         </div>
       <% end %>
+      <br />
       <%= yield %>  
     </div>
 
     <div class="footer">
       <div class="container">
         <div class="row">
-           <div class="col-6">
+           <div class="col-12 col-sm-6">
             <%= link_to "Show me more", root_path, class: 'next-quote' %>
            </div> 
-           <div class="col-6 footer-blurb">
+           <div class="col-12 col-sm-6 footer-blurb">
              Proudly designed in Dallas, TX by Kyle Noll
            </div>
         </div>
