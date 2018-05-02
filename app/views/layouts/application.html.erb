@@ -11,20 +11,22 @@
   <body>
     <header class="row">
       <div class="col-3">
-        <div class="circle">
-          <br />
-            You know
-          <br />
-            you need
-          <br />
-            to downsize
-        </div>
+        <%= link_to root_path, class: 'logo' do %>
+          <div class="circle">
+            <br />
+              You know
+            <br />
+              you need
+            <br />
+              to downsize
+          </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
         Splurting out unwanted quotes about downsizing since 2018
       </div>
       <div class="col-5 links">
-        <%= link_to 'Add Quote', '#' %>
+        <%= link_to 'Add Quote', new_quote_path %>
         <%= link_to 'About'    , '#' %>  
       </div>
     </header>
@@ -41,7 +43,7 @@
       <div class="container">
         <div class="row">
            <div class="col-6">
-            <%= link_to "Show me more", "#", class: 'next-quote' %>
+            <%= link_to "Show me more", root_path, class: 'next-quote' %>
            </div> 
            <div class="col-6 footer-blurb">
              Proudly designed in Dallas, TX by Kyle Noll
