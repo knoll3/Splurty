@@ -1,5 +1,8 @@
 @import "bootstrap";
-
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
 
 .clear {
   clear: both;
