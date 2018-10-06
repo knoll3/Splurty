@@ -1,25 +1,41 @@
-# README
+# Splurty
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Splurty is a simple Ruby on Rails application that spits out random quotes about downsizing your life. 
+In addtion to the usage of Ruby on Rails, this app also demonstrates the usage of:
+- HTML/CSS
+- Bootstrap
 
-Things you may want to cover:
+Visit [Splurty](https://splurty-kyle-noll.herokuapp.com/) on Heroku.
 
-* Ruby version
+Splurty was created as part of a remote coding bootcamp called [The Firehose Project](https://thefirehoseproject.com/).
 
-* System dependencies
+## Getting Started
 
-* Configuration
+Clone the app and install the gem files
+```
+$ git clone git@github.com:knoll3/Splurty.git
+$ cd Splurty/
+$ bundle install
+```
+After this you should be good to go!
 
-* Database creation
+## Deployment
+To deploy this app into development 
+```
+$ heroku create choose-app-name
+$ git push heroku master
+```
+View app info
+```
+$ heroku apps:info
+```
+Open the app
+```
+$ heroku open
+```
 
-* Database initialization
+## Versions
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
+Splurty uses 
+- Ruby 2.3.4
+- Rails 5.1.6
